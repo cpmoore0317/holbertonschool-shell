@@ -1,15 +1,16 @@
 #!/usr/bin/env bash
-#This script uses the while loop and if commands to specify sequences in a loop
+#This script uses the while loop to repeat a command "echo" under certain conditions. Also the "if" command is used to add an additional command in the sequence.
 
 i=0
 while
-	(( i <= 10 ))
+	[ $i -le 10 ]
 do
 	echo "Best School"
+	(( i++ ))
 	if [ $i == 9 ]
 	then
 		echo "Hi"
 		break
 	fi
-	(( i++ ))
 done
+echo "Best School"
