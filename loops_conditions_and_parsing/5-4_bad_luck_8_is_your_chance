@@ -1,1 +1,20 @@
 #!/usr/bin/env bash
+#This script uses the while loop to iterate a command 10 times.
+
+i=0
+while
+	[ $i -le 10 ]
+do
+	echo "Best School"
+	(( i++ ))
+	if [ $i == 4 ]
+	then
+		echo "bad luck"
+	elif [ $i == 8 ]
+	then
+		echo "good luck"
+		break
+	else
+		true
+	fi
+done
