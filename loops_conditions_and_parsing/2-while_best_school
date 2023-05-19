@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 #This loop takes the command "echo" and repeats its output 10 times.
-n=1
-while [ $n -le 10 ]; do echo "Best School"; done 
+i=0
+while (( i <= 10 ))	
+do 
+	echo "Best School"
+	(( i++ ))	
+done 
