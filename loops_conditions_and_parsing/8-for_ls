@@ -4,5 +4,5 @@
 i=0
 for i in ./
 do
-       ls | cut -c "3-40"	
+	ls | cut 	
 done
