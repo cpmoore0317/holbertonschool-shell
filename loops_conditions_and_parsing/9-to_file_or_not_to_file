@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
 #comment
 
-
+filename=school
+if [ -f "$filename" ];then
+	echo "school file exists"
+else
+	echo "school file does not exists"
+fi
