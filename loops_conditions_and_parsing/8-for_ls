@@ -1,1 +1,8 @@
 #!/usr/bin/env bash
+#comment
+
+i=0
+for i in ./
+do
+	ls
+done
